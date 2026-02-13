@@ -870,11 +870,13 @@ color: #66ccff;
 
     background: linear-gradient(
         90deg,
-        #ffffff,
-        #ffe9c9,
-        #ffd6f6,
-        #ffffff
+        #66ccff,   /* soft blue */
+        #ffd700,   /* gold */
+        #ffffff,   /* light glow */
+        #ffd700,   /* gold */
+        #66ccff    /* blue */
     );
+
     background-size: 300%;
 
     -webkit-background-clip: text;
@@ -886,6 +888,11 @@ color: #66ccff;
 }
 
 
+@keyframes cherishShimmer {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
 .big-line {
     font-size: 2.5rem;
 }
@@ -895,10 +902,6 @@ color: #66ccff;
     margin-top: 40px;
 }
 
-@keyframes cherishShimmer {
-    0% { background-position: 0%; }
-    100% { background-position: 250%; }
-}
 
 
         .moon-container {
@@ -1891,6 +1894,7 @@ Forever yours,"></textarea>
 
 
 </html>
+
 
 
 
