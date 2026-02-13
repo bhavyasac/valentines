@@ -1420,7 +1420,7 @@ Forever yours,"></textarea>
                     spark.style.opacity = "0";
                 }, 50);
 
-                setTimeout(() => spark.remove(), 1000);
+                setTimeout(() => spark.remove(), 2000);
             }
         }
 
@@ -1445,7 +1445,7 @@ Forever yours,"></textarea>
 
             gameCompleted = false; // reset game state
 
-            heart.style.transition = "all 0.2s linear";
+            heart.style.transition = "all 0.1s linear";
 
             gameInterval = setInterval(() => {
                 heart.style.top = Math.random() * 250 + "px";
@@ -1471,7 +1471,7 @@ Forever yours,"></textarea>
 
                 document.body.appendChild(star);
 
-                setTimeout(() => star.remove(), 1000);
+                setTimeout(() => star.remove(), 2000);
 
             }, 800);
 
@@ -1500,7 +1500,7 @@ Forever yours,"></textarea>
                     sparkle.style.opacity = "0";
                 }, 50);
 
-                setTimeout(() => sparkle.remove(), 1500);
+                setTimeout(() => sparkle.remove(), 2000);
             }
         }
 
@@ -1670,7 +1670,7 @@ Forever yours,"></textarea>
 
             // Ring animation
             ring.style.display = "block";
-            ring.style.animation = "ringPop 1s ease forwards";
+            ring.style.animation = "ringPop 1.5s ease-in-out infinite";
 
             // Effects
             confettiExplosion();
@@ -1816,4 +1816,5 @@ Forever yours,"></textarea>
 
 
 </html>
+
 
