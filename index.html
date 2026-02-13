@@ -870,6 +870,39 @@ color: #66ccff;
             animation: fadeInUp 1.2s ease-out;
         }
 
+        /* ✨ Shimmer Effect for Cherish Page */
+
+.cherish-text {
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #ffe9c9,
+        #ffd6f6,
+        #ffffff
+    );
+    background-size: 250%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: cherishShimmer 6s linear infinite, fadeInUp 1.2s ease-out;
+}
+
+.big-line {
+    font-size: 2.5rem;
+}
+
+.small-line {
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+@keyframes cherishShimmer {
+    0% { background-position: 0%; }
+    100% { background-position: 250%; }
+}
+
+
         .moon-container {
             position: relative;
             margin: 40px 0;
@@ -1318,17 +1351,17 @@ color: #66ccff;
     <!-- Page 5: Cherish -->
     <div id="page6" class="page hidden">
         <div class="cherish-container">
-            <h1>I cherish you...</h1>
+            <h1 >I cherish you...</h1>
             <div class="cherish-text">
                 More than I ever could anything or anybody in this world.
             </div>
             <div class="moon-container">
                 <div class="moon">🌙</div>
             </div>
-            <div class="cherish-text" style="font-size: 2.5rem;">
+            <div class="cherish-text big-line">
                 I love you to the moon and back ❤️
             </div>
-            <div class="cherish-text" style="font-size: 1.5rem; margin-top: 40px;">
+            <div class="cherish-text small-line">
                 ...and then to the stars and beyond 🌟
             </div>
         </div>
@@ -1860,6 +1893,7 @@ Forever yours,"></textarea>
 
 
 </html>
+
 
 
 
