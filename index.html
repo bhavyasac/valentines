@@ -861,18 +861,13 @@ color: #66ccff;
             animation: fadeInDown 1s ease-out;
         }
 
-        .cherish-text {
-            font-size: 2.2rem;
-            line-height: 1.8;
-            margin-bottom: 40px;
-            font-style: italic;
-            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-            animation: fadeInUp 1.2s ease-out;
-        }
-
-        /* ✨ Shimmer Effect for Cherish Page */
-
 .cherish-text {
+    font-size: 2.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-style: italic;
+    position: relative;
+
     background: linear-gradient(
         90deg,
         #ffffff,
@@ -880,13 +875,16 @@ color: #66ccff;
         #ffd6f6,
         #ffffff
     );
-    background-size: 250%;
+    background-size: 300%;
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: cherishShimmer 6s linear infinite, fadeInUp 1.2s ease-out;
+    animation:
+        fadeInUp 1.2s ease-out,
+        cherishShimmer 6s linear infinite;
 }
+
 
 .big-line {
     font-size: 2.5rem;
@@ -1893,6 +1891,7 @@ Forever yours,"></textarea>
 
 
 </html>
+
 
 
 
