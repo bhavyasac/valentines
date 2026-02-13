@@ -1177,7 +1177,7 @@
             <p>I was planning this for so long and you just had to go and...</p>
             <div class="emoji">💔➡️❤️</div>
             <p class="love-highlight">
-                But I still love you anyway ❤️
+                (But I still love you anyway ❤️)
             </p>
         </div>
     </div>
@@ -1235,7 +1235,7 @@
     <div id="page5" class="page hidden">
         <div class="question-box">
             <h2>So...</h2>
-            <p>If you agree that you make my heart race, my days brighter, and my life infinitely better...</p>
+            <p>If you agree that I also makes your heart race, your days brighter, and your life infinitely better...</p>
             <p style="font-size: 2rem; color: #ff6b9d; margin: 30px 0;">
                 Will you be with me forever? 💍
             </p>
@@ -1455,7 +1455,7 @@ Forever yours,"></textarea>
             heart.onclick = function () {
                 clearInterval(gameInterval);
                 gameCompleted = true; // mark as completed
-                alert("You caught my heart! 💕");
+                alert("You caught Bhavya's heart! 💕");
                 nextPage();
             };
         }
@@ -1507,7 +1507,7 @@ Forever yours,"></textarea>
 
         function rosePetals() {
 
-            const duration = 5000;
+            const duration = 6000;
             const end = Date.now() + duration;
 
             const interval = setInterval(() => {
@@ -1527,7 +1527,7 @@ Forever yours,"></textarea>
                     petal.style.transform = "translateY(100vh) rotate(360deg)";
                 }, 50);
 
-                setTimeout(() => petal.remove(), 5000);
+                setTimeout(() => petal.remove(), 6000);
 
                 if (Date.now() > end) {
                     clearInterval(interval);
@@ -1540,7 +1540,7 @@ Forever yours,"></textarea>
         function nextPage() {
 
             if (currentPage === 4 && !gameCompleted) {
-                alert("Catch my heart first! 😏");
+                alert("Catch Bhavya's heart first! 😏");
                 return;
             }
 
@@ -1605,7 +1605,7 @@ Forever yours,"></textarea>
         }
 
         function confettiExplosion() {
-            const duration = 4000; // 4 seconds
+            const duration = 6000; // 4 seconds
             const end = Date.now() + duration;
 
             const interval = setInterval(() => {
@@ -1630,7 +1630,7 @@ Forever yours,"></textarea>
                         confetti.style.transform = "translateY(100vh)";
                     }, 50);
 
-                    setTimeout(() => confetti.remove(), 3000);
+                    setTimeout(() => confetti.remove(), 6000);
                 }
 
                 if (Date.now() > end) {
@@ -1718,7 +1718,7 @@ Forever yours,"></textarea>
 
             yesBtn.style.transition = "all 0.3s ease";
 
-            alert("Sure baby !! No Pressure ... I'll always be waiting here.. 😏");
+            alert("Sure Mr. Harsh !! No Pressure ... Bhavya will always be waiting here.. 😏");
         }
 
 
@@ -1739,10 +1739,10 @@ Forever yours,"></textarea>
                 localStorage.setItem("loveLetter", letterText);
                 document.getElementById('sentMessage').style.display = 'block';
                 setTimeout(() => {
-                    alert('💕 Your beautiful words are now forever in my heart 💕\n\nThank you for being mine ❤️');
+                    alert("💕 Your beautiful words are now forever in Bhavya's heart 💕\n\nThank you for being her forever humsafar ❤️");
                 }, 500);
             } else {
-                alert('Please write something first! Even a single word means everything to me 💖');
+                alert('Please write something first! Even a single word means everything to Bhavya 💖');
             }
         }
 
@@ -1813,5 +1813,6 @@ Forever yours,"></textarea>
         }, 100);
     </script>
 </body>
+
 
 </html>
